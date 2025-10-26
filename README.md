@@ -174,14 +174,6 @@ uvicorn main:app --host 0.0.0.0 --port 8000
 - **Cumulative Layout Shift**: < 0.1
 - **Bundle Size**: Optimized with code splitting
 
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Add tests if applicable
-5. Submit a pull request
-
 ## 📄 License
 
 This project is licensed under the MIT License.
