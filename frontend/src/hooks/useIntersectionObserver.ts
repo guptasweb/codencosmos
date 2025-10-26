@@ -6,13 +6,13 @@ interface UseIntersectionObserverOptions {
   freezeOnceVisible?: boolean;
 }
 
-export function useIntersectionObserver({
+export function useIntersectionObserver<T extends HTMLElement = HTMLDivElement>({
   threshold = 0.1,
   rootMargin = '0px',
   freezeOnceVisible = false,
 }: UseIntersectionObserverOptions = {}) {
   const [isIntersecting, setIsIntersecting] = useState(false);
-  const elementRef = useRef<HTMLElement>(null);
+  const elementRef = useRef<T>(null);
 
   useEffect(() => {
     const element = elementRef.current;

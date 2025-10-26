@@ -1,25 +1,41 @@
 import React from 'react';
-import './Footer.css';
+import { SOCIAL_LINKS } from '../constants';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-icons">
-          <a href="#portfolio" className="footer-icon" aria-label="Portfolio">
+    <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-center py-12 px-4">
+      <div className="container-custom">
+        <div className="flex justify-center items-center space-x-8 mb-8">
+          <a 
+            href={SOCIAL_LINKS.PORTFOLIO} 
+            className="text-3xl hover:scale-110 transition-transform duration-200" 
+            aria-label="Portfolio"
+          >
             💼
           </a>
-          <a href="#octopus" className="footer-icon" aria-label="Octopus">
+          <a 
+            href={SOCIAL_LINKS.OCTOPUS} 
+            className="text-3xl hover:scale-110 transition-transform duration-200" 
+            aria-label="Octopus"
+          >
             🐙
           </a>
-          <a href="#camera" className="footer-icon" aria-label="Camera">
+          <a 
+            href={SOCIAL_LINKS.CAMERA} 
+            className="text-3xl hover:scale-110 transition-transform duration-200" 
+            aria-label="Camera"
+          >
             📷
           </a>
-          <a href="#contact" className="footer-icon" aria-label="Contact">
+          <a 
+            href={SOCIAL_LINKS.EMAIL} 
+            className="text-3xl hover:scale-110 transition-transform duration-200" 
+            aria-label="Contact"
+          >
             ✉️
           </a>
         </div>
-        <p className="footer-text">
+        <p className="text-gray-400 text-sm">
           © 2025 Shivani Gupta. Built with intention.
         </p>
       </div>

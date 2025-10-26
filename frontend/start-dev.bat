@@ -1,0 +1,6 @@
+@echo off
+echo Installing missing dependencies...
+npm install clsx tailwind-merge
+echo.
+echo Starting development server...
+npm start

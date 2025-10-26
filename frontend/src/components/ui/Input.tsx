@@ -4,7 +4,7 @@ import { cn } from '../../utils/cn';
 
 interface InputProps extends Omit<FormFieldProps, 'options'> {
   value: string;
-  onChange: (value: string) => void;
+  onChange?: (value: string) => void;
   className?: string;
 }
 
@@ -37,7 +37,7 @@ const Input: React.FC<InputProps> = ({
         placeholder={placeholder}
         required={required}
         value={value}
-        onChange={(e) => onChange(e.target.value)}
+        onChange={(e) => onChange?.(e.target.value)}
         className={cn(
           baseClasses,
           errorClasses,
