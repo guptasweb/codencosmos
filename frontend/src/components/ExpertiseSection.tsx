@@ -45,7 +45,7 @@ const ExpertiseSection: React.FC = memo(() => {
   ), [isIntersecting]);
 
   return (
-    <section ref={elementRef} className="section-padding bg-white" id="expertise">
+    <section ref={elementRef} className="section-padding bg-background-light" id="expertise">
       <div className="container-custom">
         <div className={headerClasses}>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">

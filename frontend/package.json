@@ -2,6 +2,7 @@
   "name": "shivani-portfolio-frontend",
   "version": "0.1.0",
   "private": true,
+  "homepage": ".",
   "dependencies": {
     "@types/node": "^16.18.68",
     "@types/react": "^18.2.42",
@@ -23,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:docs": "react-scripts build && node -e \"const fs=require('fs'); if(fs.existsSync('../docs')) fs.rmSync('../docs', {recursive:true}); fs.renameSync('build', '../docs');\"",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

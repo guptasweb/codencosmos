@@ -11,7 +11,7 @@ const HeroSection: React.FC = () => {
   return (
     <section
       ref={elementRef}
-      className="min-h-[60vh] flex items-center justify-center bg-gray-100 pt-24 pb-16"
+      className="min-h-[60vh] flex items-center justify-center bg-background-dark pt-24 pb-16"
     >
       <div className="container-custom text-center px-4">
         <div

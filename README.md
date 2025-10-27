@@ -154,10 +154,36 @@ Both frontend and backend support hot reloading. The frontend automatically prox
 
 ## 🚀 Deployment
 
-### Frontend
+### Frontend (GitHub Pages)
+
+#### Option 1: Deploy to `/docs` folder (Recommended)
 ```bash
+cd frontend
+npm run build:docs
+```
+This will build your React app and move the production files to the `/docs` folder at the root of your repository.
+
+Then configure GitHub Pages:
+1. Push your changes to GitHub
+2. Go to your repository Settings → Pages
+3. Under "Source", select "Deploy from a branch"
+4. Select branch `main` and folder `/docs`
+5. Click Save
+
+Your site will be available at `https://yourusername.github.io/codencosmos/`
+
+#### Option 2: Deploy to root
+```bash
+cd frontend
 npm run build
-# Deploy dist/ folder to any static hosting service
+# Move the contents of the build folder to the root of your repo
+```
+
+#### Option 3: Deploy to any static hosting
+```bash
+cd frontend
+npm run build
+# Deploy build/ folder to Netlify, Vercel, or any static hosting service
 ```
 
 ### Backend
@@ -165,6 +191,13 @@ npm run build
 pip install -r requirements.txt
 uvicorn main:app --host 0.0.0.0 --port 8000
 ```
+
+Deploy the backend to:
+- Heroku
+- Railway
+- DigitalOcean
+- AWS Lambda
+- Any cloud provider with Python support
 
 ## 📈 Performance Metrics
 

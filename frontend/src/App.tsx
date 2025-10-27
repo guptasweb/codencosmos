@@ -8,25 +8,28 @@ import DualIdentitySection from './components/DualIdentitySection';
 import CallToActionSection from './components/CallToActionSection';
 import Footer from './components/Footer';
 import ContactPage from './pages/ContactPage';
+import TechPortfolioPage from './pages/TechPortfolioPage';
 
 function App() {
   return (
     <ErrorBoundary>
       <Router>
-        <div className="flex flex-col min-h-screen bg-white">
+        <div className="flex flex-col min-h-screen bg-background">
           <Header />
           <Routes>
             <Route path="/" element={
               <main className="flex-grow">
-                <HeroSection />
-                <ExpertiseSection />
                 <DualIdentitySection />
-                <CallToActionSection />
               </main>
             } />
             <Route path="/contact" element={
               <main className="flex-grow">
                 <ContactPage />
+              </main>
+            } />
+            <Route path="/tech-portfolio" element={
+              <main className="flex-grow">
+                <TechPortfolioPage />
               </main>
             } />
           </Routes>

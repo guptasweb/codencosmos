@@ -89,9 +89,10 @@ export const GRADIENTS = {
 // Social Links
 export const SOCIAL_LINKS = {
   PORTFOLIO: '#portfolio',
-  OCTOPUS: '#octopus',
+  OCTOPUS: 'https://github.com/guptasweb',
   CAMERA: '#camera',
   EMAIL: 'mailto:shivani@example.com',
+  GITHUB: 'https://github.com/guptasweb',
 };
 
 // Contact Form Options
