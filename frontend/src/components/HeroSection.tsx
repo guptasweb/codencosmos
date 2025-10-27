@@ -11,9 +11,9 @@ const HeroSection: React.FC = () => {
   return (
     <section
       ref={elementRef}
-      className="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 pt-20"
+      className="min-h-[60vh] flex items-center justify-center bg-gray-100 pt-24 pb-16"
     >
-      <div className="container-custom text-center">
+      <div className="container-custom text-center px-4">
         <div
           className={cn(
             'transition-all duration-1000 ease-out',
@@ -22,20 +22,18 @@ const HeroSection: React.FC = () => {
               : 'opacity-0 translate-y-8'
           )}
         >
-          <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-8 gradient-text">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-8 gradient-text">
             Where Code Meets Consciousness
           </h1>
           
           <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-xl md:text-2xl text-gray-700 leading-relaxed">
-              I'm Shivani, a software engineer who builds systems for both technology and humanity. 
-              By day, I architect robust applications and mentor developers. By evening, I'm tending 
-              to my herb garden, studying planetary movements, or flowing through yoga sequences.
-            </p>
-            
-            <p className="text-lg md:text-xl text-gray-600 italic leading-relaxed">
-              I believe the logic of code and the wisdom of Ayurveda share the same principles: 
-              both seek balance, require debugging, and transform when you understand their underlying patterns.
+            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+              I'm Shivani—a software engineer who believes in building systems that work for both 
+              technology and humanity. By day, I architect robust applications and mentor 
+              developers. By evening, I'm in my garden with herbs, studying planetary movements, or 
+              on my yoga mat. I've discovered that the logic of code and the wisdom of Ayurveda 
+              aren't so different—both seek balance, both require debugging, and both transform 
+              when you understand their underlying patterns.
             </p>
           </div>
         </div>
