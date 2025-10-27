@@ -22,7 +22,8 @@ const Header: React.FC = () => {
         'bg-gradient-to-r from-primary-600 to-secondary-600'
       )}
     >
-      <div className="container-custom">
+      <div>
+      {/* <div className="container-custom">  commenting out while nav is hidden*/}
         <div className="flex items-center justify-between py-4 px-4">
           <Link
             to="/"
@@ -31,7 +32,7 @@ const Header: React.FC = () => {
             Shivani Gupta
           </Link>
           
-          <nav className="hidden md:flex items-center space-x-8">
+          {/* <nav className="hidden md:flex items-center space-x-8">
             {NAV_ITEMS.map((item) => (
               <Link
                 key={item.label}
@@ -42,7 +43,7 @@ const Header: React.FC = () => {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-white transition-all duration-200 group-hover:w-full" />
               </Link>
             ))}
-          </nav>
+          </nav> */}
 
           {/* Mobile menu button */}
           <button className="md:hidden p-2 text-white hover:text-gray-100">

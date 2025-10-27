@@ -205,7 +205,7 @@ const WorkExperience: React.FC = () => {
         'Optimized database performance through ActiveRecord query tuning, significantly reducing response times',
         'Established end-to-end testing protocols using Cypress and mentored junior developers'
       ],
-      tags: ['Angular 16', 'Ruby on Rails', 'Redux', 'Cypress', 'WCAG']
+      tags: ['Angular 16', 'Ruby on Rails', 'Redux', 'Cypress', 'WCAG', 'Agile']
     },
     {
       title: 'Software Engineer',
@@ -218,7 +218,7 @@ const WorkExperience: React.FC = () => {
         'Implemented comprehensive testing strategies including unit tests and automated Cypress suites',
         'Conducted thorough peer code reviews and resolved complex technical challenges'
       ],
-      tags: ['Angular', 'Redux', 'Cypress', 'Agile']
+      tags: ['Angular', 'Redux', 'Cypress', 'Agile', 'GraphQL']
     },
     {
       title: 'Software Engineer',
@@ -296,9 +296,10 @@ const SkillsExpertise: React.FC = () => {
   const frontendSkills = [
     { name: 'Angular (JS/16)', years: '9+ years', level: 95 },
     { name: 'React', years: '6+ years', level: 85 },
-    { name: 'TypeScript', years: '7+ years', level: 90 },
+    { name: 'TypeScript/Javascript', years: '7+ years', level: 90 },
     { name: 'HTML5/CSS3/SASS', years: '9+ years', level: 95 },
-    { name: 'Redux/RxJS', years: '7+ years', level: 85 }
+    { name: 'Redux/RxJS', years: '7+ years', level: 85 },
+    { name: 'GraphQL', years: '4+ years', level: 85 }
   ];
 
   const backendSkills = [

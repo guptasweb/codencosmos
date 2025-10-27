@@ -29,7 +29,7 @@ const DualIdentitySection: React.FC = () => {
             Full-Stack Engineer
           </h2>
           <p className="text-xl leading-relaxed mb-8 max-w-md opacity-95">
-            Building scalable, accessible web applications with Angular, React, and Rails. 
+            Building scalable, accessible web applications with Angular, React, Rails, and Python. 
             9+ years of experience in enterprise software development.
           </p>
           <Button 
