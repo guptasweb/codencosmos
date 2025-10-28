@@ -12,9 +12,9 @@ const Card: React.FC<CardProps> = ({
   className,
   ...props
 }) => {
-  const baseClasses = 'bg-white rounded-xl shadow-lg border border-gray-100 overflow-hidden transition-all duration-300';
+  const baseClasses = 'bg-white rounded-xl shadow-lg border border-orange-100 overflow-hidden transition-all duration-300';
   const hoverClasses = hover ? 'hover:shadow-xl hover:-translate-y-1' : '';
-  const gradientClasses = gradient ? 'bg-gradient-to-br from-white to-gray-50' : '';
+  const gradientClasses = gradient ? 'bg-gradient-to-br from-orange-50 to-background' : '';
 
   return (
     <div

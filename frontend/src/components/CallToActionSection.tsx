@@ -12,7 +12,7 @@ const CallToActionSection: React.FC = () => {
   return (
     <section 
       ref={elementRef}
-      className="section-padding bg-gradient-to-r from-primary-500 via-primary-600 to-secondary-600 text-center"
+      className="section-padding gradient-bg text-center"
     >
       <div className="container-custom">
         <div

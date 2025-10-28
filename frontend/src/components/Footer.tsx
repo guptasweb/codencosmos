@@ -3,7 +3,7 @@ import { SOCIAL_LINKS } from '../constants';
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-gradient-to-br from-gray-800 to-gray-900 text-center py-12 px-4">
+    <footer className="bg-[#7c2d12] text-center py-12 px-4">
       <div className="container-custom">
         <div className="flex justify-center items-center space-x-8 mb-8">
           <a 
@@ -35,8 +35,8 @@ const Footer: React.FC = () => {
             ✉️
           </a>
         </div>
-        <p className="text-gray-400 text-sm">
-          © 2025 Shivani Gupta. Built with intention.
+        <p className="text-orange-100 text-sm">
+          © 2025 Shivani Gupta — Built with intention
         </p>
       </div>
     </footer>

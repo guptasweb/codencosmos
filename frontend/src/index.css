@@ -21,11 +21,15 @@
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-primary-500 via-primary-600 to-secondary-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary-600 via-primary-500 to-secondary-600 bg-clip-text text-transparent;
   }
   
   .gradient-bg {
-    @apply bg-gradient-to-br from-primary-500 via-primary-600 to-secondary-600;
+    @apply bg-gradient-to-br from-primary-500 via-primary-400 to-secondary-500;
+  }
+  
+  .gradient-bg-warm {
+    @apply bg-gradient-to-br from-secondary-400 via-secondary-500 to-primary-300;
   }
   
   .card-hover {
@@ -44,5 +48,32 @@
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+/* Floating particles effect */
+.particle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  animation: float 6s infinite ease-in-out;
+}
+
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0) translateX(0); 
+    opacity: 0; 
+  }
+  10% { 
+    opacity: 1; 
+  }
+  90% { 
+    opacity: 1; 
+  }
+  100% { 
+    transform: translateY(-100vh) translateX(20px); 
+    opacity: 0; 
   }
 }

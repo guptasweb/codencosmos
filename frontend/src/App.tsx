@@ -6,7 +6,7 @@ import HeroSection from './components/HeroSection';
 import ExpertiseSection from './components/ExpertiseSection';
 import DualIdentitySection from './components/DualIdentitySection';
 import CallToActionSection from './components/CallToActionSection';
-import Footer from './components/Footer';
+import InfoFooter from './components/InfoFooter';
 import ContactPage from './pages/ContactPage';
 import TechPortfolioPage from './pages/TechPortfolioPage';
 
@@ -33,7 +33,7 @@ function App() {
               </main>
             } />
           </Routes>
-          <Footer />
+          <InfoFooter />
         </div>
       </Router>
     </ErrorBoundary>

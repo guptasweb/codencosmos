@@ -27,7 +27,7 @@ const HeroSection: React.FC = () => {
           </h1>
           
           <div className="max-w-4xl mx-auto space-y-6">
-            <p className="text-lg md:text-xl text-gray-700 leading-relaxed">
+            <p className="text-lg md:text-xl text-primary-800 leading-relaxed">
               I'm Shivani—a software engineer who believes in building systems that work for both 
               technology and humanity. By day, I architect robust applications and mentor 
               developers. By evening, I'm in my garden with herbs, studying planetary movements, or 

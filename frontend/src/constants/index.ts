@@ -2,11 +2,10 @@ import { NavItem, ExpertiseItem } from '../types';
 
 // Navigation Items
 export const NAV_ITEMS: NavItem[] = [
-  { label: 'About', href: '#about' },
-  { label: 'Engineering', href: '#engineering' },
-  { label: 'Wellness', href: '#wellness' },
-  { label: 'Blog', href: '#blog' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Tech Journey', href: '/tech-portfolio' },
+  { label: 'Wellness Path', href: '#wellness' },
+  { label: 'The Balance', href: '/' },
+  { label: 'Connect', href: '/contact' },
 ];
 
 // Expertise Data
@@ -103,8 +102,8 @@ export const CONTACT_TYPES = [
 
 // SEO Configuration
 export const SEO_CONFIG = {
-  TITLE: 'Shivani Gupta - Where Code Meets Consciousness',
+  TITLE: 'LightBeforeDusk - Where Code Meets Consciousness',
   DESCRIPTION: 'Full-Stack Engineer & Wellness Practitioner. Building scalable applications and guiding holistic healing through technology and ancient wisdom.',
   KEYWORDS: ['React', 'TypeScript', 'Yoga', 'Ayurveda', 'Full-Stack', 'Wellness', 'Astrology'],
-  AUTHOR: 'Shivani Gupta',
+  AUTHOR: 'LightBeforeDusk',
 };
