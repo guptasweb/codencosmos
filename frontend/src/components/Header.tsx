@@ -19,11 +19,16 @@ const Header: React.FC = () => {
     <header
       className={cn(
         'fixed top-0 left-0 right-0 z-50 transition-all duration-300',
-        'bg-[#fef3c7]'
+        'border-b-2 border-[#d97706]'
       )}
+      style={{
+        background: 'linear-gradient(90deg, rgba(254, 215, 170, 0.85) 0%, rgba(253, 186, 116, 0.85) 25%, rgba(254, 243, 199, 0.85) 50%, rgba(253, 230, 138, 0.85) 75%, rgba(254, 249, 195, 0.85) 100%)',
+        backdropFilter: 'blur(12px)',
+        boxShadow: '0 4px 20px rgba(217, 119, 6, 0.1)'
+      }}
     >
-      <div>
       {/* <div className="container-custom"> */}
+      <div>
         <div className="flex items-center justify-between py-4 px-6">
           <Link
             to="/"
