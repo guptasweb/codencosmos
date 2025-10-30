@@ -9,32 +9,45 @@ import CallToActionSection from './components/CallToActionSection';
 import InfoFooter from './components/InfoFooter';
 import ContactPage from './pages/ContactPage';
 import TechPortfolioPage from './pages/TechPortfolioPage';
+import MatrixPortfolioPage from './pages/MatrixPortfolioPage';
 
 function App() {
   return (
     <ErrorBoundary>
       <Router>
-        <div className="flex flex-col min-h-screen bg-background">
-          <Header />
-          <Routes>
-            <Route path="/" element={
+        <Routes>
+          {/* Matrix Portfolio - Main Page */}
+          <Route path="/" element={<MatrixPortfolioPage />} />
+          
+          {/* Legacy pages - keeping for reference */}
+          <Route path="/legacy" element={
+            <div className="flex flex-col min-h-screen bg-background">
+              <Header />
               <main className="flex-grow">
                 <DualIdentitySection />
               </main>
-            } />
-            <Route path="/contact" element={
+              <InfoFooter />
+            </div>
+          } />
+          <Route path="/contact" element={
+            <div className="flex flex-col min-h-screen bg-background">
+              <Header />
               <main className="flex-grow">
                 <ContactPage />
               </main>
-            } />
-            <Route path="/tech-portfolio" element={
+              <InfoFooter />
+            </div>
+          } />
+          <Route path="/tech-portfolio" element={
+            <div className="flex flex-col min-h-screen bg-background">
+              <Header />
               <main className="flex-grow">
                 <TechPortfolioPage />
               </main>
-            } />
-          </Routes>
-          <InfoFooter />
-        </div>
+              <InfoFooter />
+            </div>
+          } />
+        </Routes>
       </Router>
     </ErrorBoundary>
   );
